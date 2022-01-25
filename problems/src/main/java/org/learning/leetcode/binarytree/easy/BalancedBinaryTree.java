@@ -2,6 +2,8 @@ package org.learning.leetcode.binarytree.easy;
 
 import org.learning.leetcode.common.TreeNode;
 
+import java.util.Arrays;
+
 /**
  * Balanced Binary Tree, see <a
  * href="https://leetcode.com/problems/balanced-binary-tree/">problem</a>
@@ -34,6 +36,8 @@ public class BalancedBinaryTree {
     if (l == -1 || r == -1 || Math.abs(l - r) > 1) {
       return -1;
     }
+
+    Arrays.stream(new int[]{}, 1, 3).sum();
 
     return Math.max(l, r) + 1;
   }
